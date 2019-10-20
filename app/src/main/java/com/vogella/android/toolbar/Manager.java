@@ -21,6 +21,7 @@ public class Manager {
 
         IconsObject icons = fragment.getIcons();
 
+        toolbar.setTitle(fragment.getTitle());
         toolbar.getMenu().findItem(R.id.menu).setVisible(icons.iconMenu);
         toolbar.getMenu().findItem(R.id.Search).setVisible(icons.iconSearch);
         toolbar.getMenu().findItem(R.id.Filter).setVisible(icons.iconFilter);

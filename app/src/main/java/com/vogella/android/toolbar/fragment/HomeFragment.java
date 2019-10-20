@@ -13,12 +13,13 @@ import com.vogella.android.toolbar.IconsObject;
 import com.vogella.android.toolbar.R;
 
 
-public class HomeFragment extends Fragment implements BaseFragment{
+public class HomeFragment extends Fragment implements BaseFragment {
 
     private IconsObject mModelObject = IconsObject.FRAGMENTHOME;
-
+    public static final String FRAGMENT_TITLE = "Home Fragment";
 
     public HomeFragment() {
+
     }
 
     public static HomeFragment newInstance() {
@@ -29,11 +30,16 @@ public class HomeFragment extends Fragment implements BaseFragment{
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_home , container , false);
+        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
     @Override
     public IconsObject getIcons() {
         return mModelObject;
+    }
+
+    @Override
+    public String getTitle() {
+        return FRAGMENT_TITLE;
     }
 }

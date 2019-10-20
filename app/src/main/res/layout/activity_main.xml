@@ -13,7 +13,8 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:background="?attr/colorPrimary"
-            android:minHeight="?attr/actionBarSize">
+            android:minHeight="?attr/actionBarSize"
+            app:titleTextColor="@color/white">
 
 
     </androidx.appcompat.widget.Toolbar>

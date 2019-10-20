@@ -14,6 +14,7 @@ import com.vogella.android.toolbar.R;
 public class FragmentOne extends Fragment implements BaseFragment {
 
     private IconsObject icons = IconsObject.FRAGMENTONE;
+    public static final String FRAGMENT_TITLE = "Fragment One";
 
     public FragmentOne() {
     }
@@ -31,5 +32,10 @@ public class FragmentOne extends Fragment implements BaseFragment {
 
     public IconsObject getIcons() {
         return icons;
+    }
+
+    @Override
+    public String getTitle() {
+        return FRAGMENT_TITLE;
     }
 }
