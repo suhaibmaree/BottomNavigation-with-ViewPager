@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Toolbar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="ic_home">Home</string>
+    <string name="ic_one">Frag One</string>
+    <string name="ic_frag">Frag Two</string>
+</resources>
